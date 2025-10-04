@@ -39,17 +39,6 @@ Crea, lee, actualiza y elimina registros de estudiantes.<br>
 
 Los cambios se guardan directamente en la base de datos estudiantes_db.<br>
 
-🤝 Contribuciones
-¡Contribuciones bienvenidas!<br>
-Para colaborar:
-Haz un fork del repositorio.<br>
-Crea una rama nueva:
-git checkout -b feature/nueva-funcionalidad
-```<br>
-Realiza tus cambios y haz commit:
-git commit -m "Añadir nueva funcionalidad"
-```<br>
-Envía tu rama a tu fork y abre un Pull Request.<br>
 
 
 
