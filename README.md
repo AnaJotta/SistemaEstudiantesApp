@@ -32,12 +32,22 @@ SistemaEstudiantesApp/<br>
 
 ---
 
-✅ Flujo de la aplicación
+## ✅ Flujo de la aplicación
 La aplicación se conecta a MySQL usando los datos de config.properties.<br>
 
 Crea, lee, actualiza y elimina registros de estudiantes.<br>
 
 Los cambios se guardan directamente en la base de datos estudiantes_db.<br>
+
+---
+
+## 👏 Contribuciones
+Las contribuciones son bienvenidas. Si deseas mejorar la aplicación, por favor sigue estos pasos:
+- Realiza un fork de este repositorio.
+- Crea una nueva rama (git checkout -b feature/nueva-caracteristica).
+- Realiza tus cambios y haz commit de ellos (git commit -am 'Añadir nueva característica').
+- Sube tus cambios a tu fork (git push origin feature/nueva-caracteristica).
+- Abre un pull request describiendo tus cambios.
 
 
 
