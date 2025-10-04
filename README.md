@@ -1,4 +1,4 @@
-# 🛸 SistemaEstudiantesApp
+# 👨‍🎓 SistemaEstudiantesApp
 
 **SistemaEstudiantesApp** es una aplicación de escritorio desarrollada en **Java** que permite gestionar estudiantes mediante una base de datos **MySQL**. La aplicación ofrece una interfaz sencilla y organizada para realizar operaciones CRUD (Crear, Leer, Actualizar, Eliminar) sobre los registros de estudiantes.
 
