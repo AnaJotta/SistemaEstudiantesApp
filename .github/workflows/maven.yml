@@ -1,1 +1,39 @@
+name: Java CI with Maven
+
+# Se ejecuta cada vez que haces push o PR a main
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1️⃣ Clona el repositorio
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # 2️⃣ Configura Java 17
+      - name: Set up JDK 17
+        uses: actions/setup-java@v4
+        with:
+          java-version: '17'
+          distribution: 'temurin'
+
+      # 3️⃣ Cachea las dependencias de Maven (para acelerar el workflow)
+      - name: Cache Maven packages
+        uses: actions/cache@v4
+        with:
+          path: ~/.m2
+          key: ${{ runner.os }}-maven-${{ hashFiles('**/pom.xml') }}
+          restore-keys: |
+            ${{ runner.os }}-maven-
+
+      # 4️⃣ Construye el proyecto y ejecuta los tests
+      - name: Build and run tests
+        working-directory: StudentManagement/student-management
+        run: mvn -B clean verify
 
